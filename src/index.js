@@ -59,7 +59,6 @@ randomImage.addEventListener("click", () => {
         let cellText = document.createTextNode(item);
         cell.appendChild(cellText);
         cell.appendChild(img);
-        // cell.setAttribute(`style`, `background-color: rgb(${item+item+10}, ${item+item+40}, ${item+item+40})`)
         img.setAttribute(
           `src`,
           `https://source.unsplash.com/collection/${item}`
@@ -78,7 +77,6 @@ randomImage.addEventListener("click", () => {
 });
 
 buttonGenerate.addEventListener("click", () => {
-  // const color = "66, 135, 245";
   if (!input.value || typeof input == "string") {
     alert("Please use number");
   } else {
@@ -156,9 +154,3 @@ buttonGenerate.addEventListener("click", () => {
 random.addEventListener("click", () => {
   window.location.reload();
 });
-
-// Form For Click Enter Call The Function
-
-// form.addEventListener("submit", (e) => {
-//   e.preventDefault();
-// });
